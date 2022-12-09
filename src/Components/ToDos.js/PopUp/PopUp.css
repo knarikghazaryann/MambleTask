@@ -1,0 +1,77 @@
+.deleteButton {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+body.active-popupWindow {
+    overflow-y: hidden;
+}
+
+.popupWindow, .overlay {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.overlay {
+    background: rgba(69, 69, 69, 0.7);
+}
+
+
+.popupWindow-content {
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 38%;
+    background: #fff;
+    border-radius: 4px;
+    width: 400px;
+    height: 200px;
+    padding: 50px 0;
+}
+
+.popupWindow-content p {
+    color: #008594;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.confirmation-buttons-block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.confirmation-buttons-block button {
+    background-color: transparent;
+    border: none;
+    color: #174348;
+    font-size: 18px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 376px) {
+    .popupWindow-content {
+        width: 324px;
+        height: 140px;
+        top: 40%;
+        left: 8%;
+        padding: 30px 38px; 
+    }
+    .popupWindow-content p {
+        font-size: 14px;
+    }
+    .confirmation-buttons-block {
+        margin-top: 20px;
+    }
+    .confirmation-buttons-block button {
+        font-size: 14px;
+    }
+}
