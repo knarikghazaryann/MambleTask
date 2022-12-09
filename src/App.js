@@ -1,8 +1,10 @@
 import "./App.css";
-import React, { useEffect, useReducer, useState } from "react";
+import React, { useEffect, useReducer, useState, Fragment } from "react";
 import ToDos from "./Components/ToDos.js/ToDos";
 import { getSettings, getToDo } from "./actions/todos";
 import { reducer } from "./Components/Reducer/reducer";
+
+// before npm start please type npm run server ( just in case :) )
 
 function App() {
   const [hideCompleted, setHideCompleted] = useState(false);
